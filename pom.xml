@@ -82,6 +82,21 @@
 			<version>2.4.5</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-dependency-plugin</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -92,6 +107,7 @@
 			</plugin>
 
 			<!--plugin para que lo tome heroku -->
+			<!--
 			<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
@@ -112,16 +128,7 @@
                     </configuration>
                 </execution>
             </executions>
-        	</plugin>
-
-			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
+        	</plugin> -->
 
 		</plugins>
 	</build>
